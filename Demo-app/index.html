@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PKommunicate</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<header>
+	<div class="headerarea" >
+		<img src="Shout-Out.png" class="shoutout">
+		<h2 class="leftAlign">
+			ProKarma
+		</h2>
+		<h2 class="rightAlign">
+			PKommunicate
+		</h2>
+	</div>
+	</header>
+	<nav>
+		<ul class="nav">
+		  <li>
+			<a> Home </a>
+		  </li>
+		  <li>
+			<a> Post </a>
+		  </li>
+		  <li>
+			<a style="cursor:progress"> Search </a>
+		  </li>
+		  <li>
+			<a style="cursor:not-allowed"> Admin </a>
+		  </li>
+		  <ul class="nav rightAlign">
+			<li>
+				<a> Logout </a>
+			</li>
+		  </ul>
+		</ul>
+	</nav>
+	<div class="view-container">
+<section>
+	<article>
+		<div>
+			<h3 class="centerAlign"> Go Ahead and Happy Posting</h3>
+		</div>
+		<br/>
+
+		<form action="javascript:showAlert();" class="form" >
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" maxlength="6" required="required">
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname">
+
+			<label>Age: <input type="text" name="age" /></label>
+			<br/ >
+			Gender: <input id="female" type="radio" name="gender" value="f">
+			<label for="female">Female</label>
+			<input id="male" type="radio" name="gender" value="m">
+			<label for="male">Male</label>
+			<br/>
+			<br/>
+			<label for="country">State</label>
+			<select id="country" name="country">
+			  <option value="australia">Australia</option>
+			  <option value="canada">Canada</option>
+			  <option value="usa">USA</option>
+			</select>
+
+			<p>Multi Selection box</p>
+			<select name="instruments" size="3" multiple="multiple">
+				<option value="guitar" selected="selected"> Guitar</option>
+				<option value="drums">Drums</option> <option value="keyboard" selected="selected">Keyboard</option>
+				<option value="bass">Bass</option>
+			</select>
+
+			<input type="text" name="search" placeholder="Search.." class="search">
+
+
+		  <p>Please select your favorite genre: <br /> <input type="checkbox" name="genre" value="rock" checked="checked" /> Rock <input type="checkbox" name="genre" value="pop" /> Pop <input type="checkbox" name="genre" value="jazz" /> Jazz </p>
+
+
+
+			<input type="submit" value="Submit">
+		</form>
+	</article>
+</section>
+
+	</div>
+	<footer>
+	<p>&copy; 2015 Prokarma. All rights reserved.</p>
+</footer>
+</body>
+<script>
+	function showAlert(){
+		alert("Form has been submitted");
+	}
+</script>
+</html>
